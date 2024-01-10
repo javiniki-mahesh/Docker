@@ -1,0 +1,30 @@
+# version: '3'
+# services:
+#   pandas11:
+#     image: pandas1
+#   numpy11:
+#     image: numpy1
+
+# version: '3'
+# services:
+#   image1:
+#     container_name: hello-world1
+#     image: hello-world
+#   image2:
+#     container_name: hello-world2
+#     image: hello-world
+
+
+version: "3"
+services:
+  numpy11:
+    build:
+      context: .
+      dockerfile: numpy_dir/Dockerfile
+    image: numpy1
+  
+  pnadas11:
+    build:
+      context: .
+      dockerfile: pandas_dir/Dockerfile
+    image: pandas1
